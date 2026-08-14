@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.25rem;
+    --background: #020202;
+    --foreground: #f8f8f8;
+    --card: #040404;
+    --card-foreground: #f8f8f8;
+    --popover: #040404;
+    --popover-foreground: #f8f8f8;
+    --primary: #005d32;
+    --primary-foreground: #f8f8f8;
+    --secondary: #090909;
+    --secondary-foreground: #f8f8f8;
+    --muted: #0d0d0d;
+    --muted-foreground: #a4a4a4;
+    --accent: #005d32;
+    --accent-foreground: #f8f8f8;
+    --destructive: #c53829;
+    --destructive-foreground: #f8f8f8;
+    --border: #161616;
+    --input: #0d0d0d;
+    --ring: #005d32;
+    --gold: #ddb049;
+    --silver: #c4c4c4;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', 'Manrope', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
+
+.text-gold-grad {
+  background: linear-gradient(135deg, #ffd87a 0%, #bd821a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-metallic {
+  background: linear-gradient(135deg, #c4c4c4 0%, #717171 50%, #c4c4c4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
